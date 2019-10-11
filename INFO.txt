@@ -1,0 +1,13 @@
+Open source codes:
+resnet.py: keras implementation of resnet, https://github.com/raghakot/keras-resnet, MIT License
+
+Custom codes:
+data2record: Convert .xls data into .tfrecord (for training) and image (for demostration). Method for cross validation split is included.
+train.py: the training script, generating model files.
+test.py: the testing script, generating test result as csv.
+weighted_gaussian_kde.py: alternative gaussian filter method for data2record.py, modified from scipy, but not used in this project.
+analyze.py: some plot and statistics for the test result.
+shap_test.py: calculate shap with model for specific sample.
+ranking.py: calculate importance for features of the specified sample
+
+note: The scripts are not arranged for general use yet.
