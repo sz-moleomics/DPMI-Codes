@@ -3,14 +3,14 @@
 The command line is not implemented yet. Please read through all comments in the scripts and modify parameters manually.
 
 ## Requirements
-1.  Make sure you have python 3 installed.
+1.  Make sure you have python 3 installed. (Tested for 3.5.4 and 3.6.5)
 2.  Install dependencies with the following command:
 ```bash
 pip install numpy matplotlib seaborn sklearn scipy xlrd pandas tensorflow-gpu keras shap
 ```
 
 ## Quick Demo
-Some sample data is prepared to illustrate the experiment result:
+Some sample data are prepared to illustrate the experiment result:
 1. Directly run `python analyze.py` in bash/command prompt to show 4 figures for classification performance.
 2. Directly run `python ranking.py` in bash/command prompt to show importance distribution for the sample data `sample_data/test_1_0.xls`. A picture `test_1_0_importance.png` and a feature importance list `test_1_0_ranking.csv` will also be generated when the script ends.
 
@@ -49,7 +49,7 @@ For each fold, a train data record, a test data record, a train data meta file a
 ### Train
 Modify parameters in `train.py` and run `python train.py`.
 
-The final model of each fold will be generated in specified folder.
+The final model of each fold will be generated in the specified folder.
 
 ### Test Analysis
 The test accuracy should come along with the training log. But with the `test.py`, a statistics .csv file could be generated for further visualization. Run `python analyze.py` with its path configured and you could see the performance of the model.
